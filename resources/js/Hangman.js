@@ -1,3 +1,5 @@
+//const { isEmpty, capitalize, upperCase } = require(`lodash`);
+
 
 class Hangman {
   constructor(_canvas) {
