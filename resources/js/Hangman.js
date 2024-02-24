@@ -10,7 +10,6 @@ class Hangman {
     this.ctx = this.canvas.getContext(`2d`);
   }
 
-
   /**
    * This function takes a difficulty string as a parameter
    * would use the Fetch API to get a random word from the Hangman
@@ -132,7 +131,7 @@ class Hangman {
    * if the number wrong guesses is 6, then also set isOver to true and didWin to false.
    */
   onWrongGuess() {
-    this.onWrongGuess === 0;
+    this.onWrongGuess++;
 
 
     if(this.onWrongGuess === 0){

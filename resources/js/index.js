@@ -82,7 +82,6 @@ try {
     guessInput.value = '';
     if(game.isOver){
       guessInput.disabled = true;
-      guessButton.disabled = true;
       resetGame.style.display = `block`;
     }
    
