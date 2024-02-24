@@ -32,7 +32,6 @@ let canvas = document.getElementById(`hangmanCanvas`);
 // The following Try-Catch Block will catch the errors thrown
 try {
   // Instantiate a game Object using the Hangman class.
-  const canvas = document.getElementById('hangmanCanvas');
   const game = new Hangman(canvas);
 
 
