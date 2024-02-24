@@ -46,16 +46,22 @@ try {
     event.preventDefault();
 
 
-    const difficultyInput = document.querySelector(`input[name="difficulty"]:checked`);
+   // const difficulty = document.querySelector(`input[name="difficulty"]:checked`);
+    
+    if(difficulty){
 
 
-    game.start(difficultyInput.value, function(){
+
+    game.start(difficulty.value, function(){
       startWrapper.style.display = `none`;
       gameWrapper.style.display = `block`;
       wordHolderText.textContent = game.getWordHolderText();
       guessesText.textContent = game.getGuessesText();
       console.log("I'm working, but not the way you want")
     });
+  }else {
+    console.error("No difficulty option selected");
+  }
   });
 
 

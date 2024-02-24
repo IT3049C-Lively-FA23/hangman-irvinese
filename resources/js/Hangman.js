@@ -225,10 +225,17 @@ class Hangman {
   }
 
 
-  drawHead() {}
+  drawHead() {const centerX = 250; 
+  const centerY = 80;
+  const radius = 15; 
+  
+  this.ctx.beginPath();
+  this.ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+  this.ctx.stroke(); 
+}
 
 
-  drawBody() {}
+  drawBody() {this.ctx.fillRect(300,20,20,400)}
 
 
   drawLeftArm() {}
