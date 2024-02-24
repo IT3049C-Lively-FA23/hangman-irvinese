@@ -113,13 +113,18 @@ class Hangman {
   checkWin() {
     // using the word and the guesses array, figure out how many remaining unknowns.
     // if zero, set both didWin, and isOver to true
-    let unknowns = this.word.filter(letter => !this.guesses.includes(letter)).length;
+    const unknowns = this.guesses.split('')(letter => !this.guesses.includes(letter)).length;
 
 
-    if(unknowns === 0){
+    if(unknowns){
       this.didWin=true;
       this.isOver=true;
     }
+
+   if(this.didWin){
+      const revealedWord = this.guesses.join(' ');
+      console.log(`Congratulations! you've guesses the word: ${revealedWord}`);
+    } 
   }
 
 
@@ -133,8 +138,6 @@ class Hangman {
    * if the number wrong guesses is 6, then also set isOver to true and didWin to false.
    */
   onWrongGuess() {
-    this.onWrongGuess++;
-
 
     if(this.onWrongGuess === 0){
       this.drawBase();
