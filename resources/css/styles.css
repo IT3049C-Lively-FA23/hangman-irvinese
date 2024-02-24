@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#startWrapper, #gameWrapper {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+#guessForm {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+#resetGame {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+input[type="submit"], button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+#hangmanCanvas {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+}
