@@ -14,7 +14,7 @@ Instructions to this assignment can be found [here](https://reedws.github.io/IT3
 ## Self-Evaluation:
 
 how many points out of 20 do you deserve on this assignment:
-I think i should get a 19/20, I worked fairly hard on this project though I deducted on point since it's the bare minimum with no flashy substance to it.
+I think i should get a 19/20, I worked fairly hard on this project though I deducted on point since it's the bare minimum with no flashy substance to it. Also part of my github commits are missing since I wanted to delete the old repo to get a fresh mindset but I don't think that should deduct points.
 
 ## Self-Reflection:
   This one took me a bit, mainly because I worked on it, then relaizsed that something was wrong so this whole assigment was like starting in the middle and then going back and forth with what I needed to fix. At least I got it all done though.
