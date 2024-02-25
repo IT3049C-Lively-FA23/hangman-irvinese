@@ -76,17 +76,17 @@ class Hangman {
 
 
     if(letter === ` `){
-      throw new Error(`you have not guessed a letter yet.`);
+      console.log(`you have not guessed a letter yet.`);
     }
    
     if(!/[a-z]/.test(letter)){
-      throw new Error(`You have put a character that is not a letter, please guess a letter of the alphabet.`);
+      console.log(`You have put a character that is not a letter, please guess a letter of the alphabet.`);
     }
     letter = letter.toLowerCase();
 
 
     if(this.guesses.includes(letter)){
-      throw new Error(`you have already guessed this letter, please select one you have not tried yet.`);
+      console.log(`you have already guessed this letter, please select one you have not tried yet.`);
     }
    
     this.guesses.push(letter);
@@ -113,7 +113,7 @@ class Hangman {
   checkWin() {
     // using the word and the guesses array, figure out how many remaining unknowns.
     // if zero, set both didWin, and isOver to true
-    const unknowns = this.guesses.split('')(letter => !this.guesses.includes(letter)).length;
+    const unknowns = this.word.split('').every(letter => !this.guesses.includes(letter));
 
 
     if(unknowns){
@@ -121,10 +121,11 @@ class Hangman {
       this.isOver=true;
     }
 
-   if(this.didWin){
-      const revealedWord = this.guesses.join(' ');
-      console.log(`Congratulations! you've guesses the word: ${revealedWord}`);
-    } 
+    if (this.didWin) {
+      const revealedWord = this.word.join(' ');
+      console.log(`Congratulations! You've guessed the word: ${revealedWord}`);
+  }
+    
   }
 
 
