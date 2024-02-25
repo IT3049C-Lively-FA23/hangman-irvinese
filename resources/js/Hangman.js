@@ -10,6 +10,7 @@ class Hangman {
 
     this.canvas = _canvas;
     this.ctx = this.canvas.getContext(`2d`);
+    this.wrongGuessCount = 0;
   }
 
   /**
@@ -120,7 +121,7 @@ class Hangman {
       this.didWin=true;
       this.isOver=true;
   
-      console.log(`Congratulations! You've guessed the word: ${revealedWord}`);
+      console.log(`Congratulations! You've guessed the word: ${this.word}`);
     }
     
   }
@@ -137,33 +138,31 @@ class Hangman {
    */
   onWrongGuess() {
 
-    if(this.onWrongGuess === 0){
+    this.wrongGuessCount++;
+
+    if(this.wrongGuessCount === 0){
       this.drawBase();
     }
-    else if(this.onWrongGuess === 1){
+    else if(this.wrongGuessCount === 1){
       this.drawBody();
     }
-    else if(this.onWrongGuess === 2){
+    else if(this.wrongGuessCount === 2){
       this.drawHead();
     }
-    else if(this.onWrongGuess === 3){
+    else if(this.wrongGuessCounts === 3){
       this.drawLeftArm();
     }
-    else if(this.onWrongGuess === 4){
+    else if(this.wrongGuessCount === 4){
       this.drawLeftLeg();
     }
-    else if(this.onWrongGuess === 5){
+    else if(this.wrongGuessCount === 5){
       this.drawRightArm();
     }
-    else if(this.onWrongGuess === 6){
+    else if(this.wrongGuessCount === 6){
       this.drawRightLeg();
       this.isOver= true;
       this.didWin= false;
-    }
-
-    if(this.onWrongGuess === 6){
-      const revealedWord = this.word.join(' ');
-          console.log(`Sorry, you did not guess the word =( The word was: ${revealedWord}`);
+      console.log(`Sorry, you did not guess the word =( The word was: ${this.word}`);
     }
    
   }
