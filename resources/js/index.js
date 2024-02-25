@@ -106,6 +106,7 @@ try {
   resetGame.addEventListener(`click`, function (e) {
     startWrapper.style.display = `block`;
     gameWrapper.style.display = `none`;
+    window.location.reload();
 
 
   });
