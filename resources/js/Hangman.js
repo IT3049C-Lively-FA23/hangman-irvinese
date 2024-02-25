@@ -149,7 +149,7 @@ class Hangman {
     else if(this.wrongGuessCount === 2){
       this.drawHead();
     }
-    else if(this.wrongGuessCounts === 3){
+    else if(this.wrongGuessCount === 3){
       this.drawLeftArm();
     }
     else if(this.wrongGuessCount === 4){
@@ -241,14 +241,24 @@ class Hangman {
   drawBody() {this.ctx.fillRect(245,100,10,200)}
 
 
-  drawLeftArm() {this.ctx.fillRect()}
+  drawLeftArm() {
+    this.ctx.save();
+    this.ctx.translate(100, 100);
+    this.ctx.rotate(Math.PI /4);
+    this.ctx.fillRect(250,80,10,60);
+    this.ctx.restore();
+  }
 
 
   drawRightArm() {
     this.ctx.fillRect()}
 
 
-  drawLeftLeg() {}
+  drawLeftLeg() {this.ctx.save();
+    this.ctx.translate(100, 100);
+    this.ctx.rotate(Math.PI /4);
+    this.ctx.fillRect(250,50,10,80);
+    this.ctx.restore();}
 
 
   drawRightLeg() {}
