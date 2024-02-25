@@ -238,13 +238,14 @@ class Hangman {
 }
 
 
-  drawBody() {this.ctx.fillRect(300,20,20,400)}
+  drawBody() {this.ctx.fillRect(245,100,10,200)}
 
 
-  drawLeftArm() {}
+  drawLeftArm() {this.ctx.fillRect()}
 
 
-  drawRightArm() {}
+  drawRightArm() {
+    this.ctx.fillRect()}
 
 
   drawLeftLeg() {}
