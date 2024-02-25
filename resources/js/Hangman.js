@@ -165,7 +165,10 @@ class Hangman {
       this.didWin= false;
     }
 
-
+    if(this.didWin = false){
+      const revealedWord = this.word.join(' ');
+          console.log(`Sorry, you did not guess the word =( The word was: ${revealedWord}`);
+    }
    
   }
 
