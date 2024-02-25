@@ -165,7 +165,7 @@ class Hangman {
       this.didWin= false;
     }
 
-    if(this.didWin = false){
+    if(this.onWrongGuess === 6){
       const revealedWord = this.word.join(' ');
           console.log(`Sorry, you did not guess the word =( The word was: ${revealedWord}`);
     }
