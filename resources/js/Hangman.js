@@ -265,12 +265,13 @@ class Hangman {
     this.ctx.translate(100, 100);
     this.ctx.rotate(Math.PI /4);
     this.ctx.fillRect(235,35,10,80);
-    this.ctx.restore();}
+    this.ctx.restore();
+    }
 
 
   drawRightLeg() {this.ctx.save();
     this.ctx.translate(100, 100);
     this.ctx.rotate(-Math.PI /4);
-    this.ctx.fillRect(230,-35,10,80);
+    this.ctx.fillRect(-35,235,10,80);
     this.ctx.restore();}
 }
