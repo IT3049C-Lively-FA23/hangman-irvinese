@@ -57,7 +57,6 @@ try {
       gameWrapper.style.display = `block`;
       wordHolderText.textContent = game.getWordHolderText();
       guessesText.textContent = game.getGuessesText();
-      console.log("I'm working, but not the way you want")
     });
   }else {
     console.error("No difficulty option selected");
@@ -96,6 +95,7 @@ try {
       alert(`You won!`);
     } else if(!game.didWin && game.isOver){
       alert(`you Lost =(`);
+      game.drawRightLeg();
     }
   });
 

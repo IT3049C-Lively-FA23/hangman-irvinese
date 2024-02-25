@@ -77,16 +77,19 @@ class Hangman {
 
 
     if(letter === ` `){
+      alert("you have not guessed a letter")
       throw new Error(`you have not guessed a letter yet.`);
     }
    
     if(!/[a-z]/.test(letter)){
+      alert("that is not a letter")
       throw new Error(`You have put a character that is not a letter, please guess a letter of the alphabet.`);
     }
     letter = letter.toLowerCase();
 
 
     if(this.guesses.includes(letter)){
+      alert("you have already guessed this letter, select one you have not guessed yet")
       throw new Error(`you have already guessed this letter, please select one you have not tried yet.`);
     }
    
@@ -121,7 +124,7 @@ class Hangman {
       this.didWin=true;
       this.isOver=true;
   
-      console.log(`Congratulations! You've guessed the word: ${this.word}`);
+      alert(`Congratulations! You've guessed the word: ${this.word}`);
     }
     
   }
@@ -159,9 +162,10 @@ class Hangman {
     }
     else if(this.wrongGuessCount === 6){
       this.drawRightLeg();
+      alert(`Sorry, you did not guess the word =( The word was: ${this.word}`);
       this.isOver= true;
       this.didWin= false;
-      console.log(`Sorry, you did not guess the word =( The word was: ${this.word}`);
+      
     }
    
   }
