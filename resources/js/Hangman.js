@@ -250,19 +250,23 @@ class Hangman {
 
 
   drawRightArm() {
-    this.ctx.fillRect()}
+    this.ctx.save();
+    this.ctx.translate(100, 100);
+    this.ctx.rotate(-Math.PI /4);
+    this.ctx.fillRect(100,100,10,60);
+    this.ctx.restore();}
 
 
   drawLeftLeg() {this.ctx.save();
     this.ctx.translate(100, 100);
     this.ctx.rotate(Math.PI /4);
-    this.ctx.fillRect(250,50,10,80);
+    this.ctx.fillRect(235,35,10,80);
     this.ctx.restore();}
 
 
   drawRightLeg() {this.ctx.save();
     this.ctx.translate(100, 100);
     this.ctx.rotate(-Math.PI /4);
-    this.ctx.fillRect(250,50,10,80);
+    this.ctx.fillRect(230,-35,10,80);
     this.ctx.restore();}
 }
