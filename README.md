@@ -7,14 +7,17 @@ Instructions to this assignment can be found [here](https://reedws.github.io/IT3
 
 ## Checklist:
 - [x] update the assignment checks above to the correct link. - Done Automatically
-- [ ] make sure the assignment checks pass
-- [ ] fill out the self evaluation and Reflection
-- [ ] submit the repository link on Canvas
+- [ x] make sure the assignment checks pass
+- [ x] fill out the self evaluation and Reflection
+- [ x] submit the repository link on Canvas
 
 ## Self-Evaluation:
 
 how many points out of 20 do you deserve on this assignment:
+I think i should get a 19/20, I worked fairly hard on this project though I deducted on point since it's the bare minimum with no flashy substance to it.
 
 ## Self-Reflection:
+  This one took me a bit, mainly because I worked on it, then relaizsed that something was wrong so this whole assigment was like starting in the middle and then going back and forth with what I needed to fix. At least I got it all done though.
 
 ### How long it took me to finish this?
+5 hours maybe, I did spend about a hour trying to get the fillrect functions in the right space since it took me a while to understand how much a number affects it, and then I had to relearn that while it was rotated.
