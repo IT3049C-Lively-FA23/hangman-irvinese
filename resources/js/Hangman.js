@@ -137,7 +137,6 @@ class Hangman {
    * if the number wrong guesses is 6, then also set isOver to true and didWin to false.
    */
   onWrongGuess() {
-
     this.wrongGuessCount++;
 
     if(this.wrongGuessCount === 0){
@@ -245,7 +244,7 @@ class Hangman {
     this.ctx.save();
     this.ctx.translate(100, 100);
     this.ctx.rotate(Math.PI /4);
-    this.ctx.fillRect(250,80,10,60);
+    this.ctx.fillRect(100,-100,10,60);
     this.ctx.restore();
   }
 
@@ -261,5 +260,9 @@ class Hangman {
     this.ctx.restore();}
 
 
-  drawRightLeg() {}
+  drawRightLeg() {this.ctx.save();
+    this.ctx.translate(100, 100);
+    this.ctx.rotate(-Math.PI /4);
+    this.ctx.fillRect(250,50,10,80);
+    this.ctx.restore();}
 }
